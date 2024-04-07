@@ -72,7 +72,7 @@ Membuat rangkaian Sistem Terdistribusi seperti gambar dibawah ini menggunakan:
     sudo nano sister.local
     ```
     menjadi
-    Gambar edit-sister.local
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/edit-sister.local.png?raw=true)
     
     cek konfigurasi jika syntax is ok lalu restart
     ```sh
@@ -93,15 +93,15 @@ Membuat rangkaian Sistem Terdistribusi seperti gambar dibawah ini menggunakan:
     sudo nano index.html
     ```
     menjadi 
-    Gambar index.html
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/edit-index.html.png?raw=true)
     
 - Buka notepad rund as Admin lalu buka file yang ada di partisi C:\Windows\System32\drivers\etc\hosts
 Tambahkan 127.0.0.1 sister.local 
-gambar etc-hosts
+![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/etc-hosts.png?raw=true)
 
 - Selanjutnya buka browser ketikkan sister.local 
     hasilnya 
-    Gambar browser sister.local
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/browser-sister.local.png?raw=true)
 
 # Skema 2 Membuat sister.local/blog dan /aboutus menggunakan microservices
 Jadi kita akan membuat microservices menggunakan ubuntu 20 dan ubuntu 18 ubuntu local di dalam ubuntu 22
@@ -125,7 +125,7 @@ Jadi kita akan membuat microservices menggunakan ubuntu 20 dan ubuntu 18 ubuntu 
     ```sh
     sudo lxc-ls -f
     ```
-    Gambar lxc-ls
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/lxc-ls.png?raw=true)
 
 - Attach ke microservice 1 & Microservice 2
     ```sh
@@ -149,8 +149,8 @@ Jadi kita akan membuat microservices menggunakan ubuntu 20 dan ubuntu 18 ubuntu 
     sudo nano /etc/netplan/10-lxc.yaml
     ```
     Edit sesuai ip yang tadi sudah di cek
-    Gambar config netplan-mcsv1
-    Gambar config netplan-mcsv2
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/netplan-1.png?raw=true)
+     ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/netplan-2.png?raw=true)
     
 - Selanjutnya ketikkan di setiap microservice
     ```sh
@@ -177,13 +177,13 @@ Sekarang membuat webserver untuk /blog dan /aboutus
     ```
     menjadi 
     microservice1
-    Gambar index-nginx1
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/index-nginx-1.png?raw=true)
     microservice2
-    Gambar index-nginx1
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/index-nginx-2.png?raw=true)
     
     Jalankan curl localhost untuk melihat hasilnya 
-    gambar curl localhost1
-    gambar curl localhost2
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/curl-localhost1.png?raw=true)
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/curl-localhost2.png?raw=true)
 
 - Selanjutnya pindah ke direktori etc/nginx setiap microservice
     ```sh
@@ -202,8 +202,8 @@ Sekarang membuat webserver untuk /blog dan /aboutus
     nano mcsv1.local
     nano mcsv2.local
     ```
-    gambar mcsv1.local
-    gambar mcsv2.local
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/mcsv1.local.png?raw=true)
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/mcsv2.local.png?raw=true)
 
     cek konfigurasi tiap microservice 
     ```sh
@@ -223,10 +223,10 @@ Sekarang membuat webserver untuk /blog dan /aboutus
     sudo nano /etc/hosts
     ```
     tambahkan 127.0.0.1 microservice1 pada microservice 1
-    gambar etc-host-1
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/etc-host-1.png?raw=true)
     
     tambahkan 127.0.0.1 microservice2
-    gambar etc-host-2
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/etc-hosts-2.png?raw=true)
     
 - Cek kembali apakah sudah sesuai
     ```sh
@@ -239,8 +239,8 @@ Selanjutnya kita lanjut ke parent. Kita akan mengarahkan jika ada orang yang ing
     ```sh
     Sudo nano /etc/hosts
     ```
-    tambahkan 10.0.3.204 mcsv1.local & 10.0.3.113 mcsv2.local
-    gambar etc-host-parent
+    Tambahkan 10.0.3.204 mcsv1.local & 10.0.3.113 mcsv2.local
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/etc-host-parent.png?raw=true)
 
 - Selanjutnya ke file nginx 
     ```sh
@@ -250,7 +250,7 @@ Selanjutnya kita lanjut ke parent. Kita akan mengarahkan jika ada orang yang ing
     ```sh
     sudo nano sister.local
     ```
-    gambar edit-sister.local(2).png
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/edit-sister.local(2).png?raw=true)
     
     cek konfigurasi 
     ```sh
@@ -259,13 +259,13 @@ Selanjutnya kita lanjut ke parent. Kita akan mengarahkan jika ada orang yang ing
     ```
     
 - Selanjutnya coba curl sister.local/blog
-gambar sister.local/blog
+![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/curl-sister.local-blog.png?raw=true)
 
 - Jika bisa langsung kita coba di browser dengan mengetikkan sister.local/blog & sister.local/aboutus
 Hasil /blog
-gambar /blog
+![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/blog.png?raw=true)
 Hasil /aboutus
-gambar /aboutus
+![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/about.png?raw=true)
 
     
 
