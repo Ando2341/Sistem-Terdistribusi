@@ -144,6 +144,11 @@ Jadi kita akan membuat microservices menggunakan ubuntu 20 dan ubuntu 18 ubuntu 
     ```sh
     ip a
     ```
+    Ip microservice 1
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/ip-mcsv1.png?raw=true)
+  
+    Ip microservice 2
+    ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%201/assets/ip-mcsv2.png?raw=true)
 - Edit netplan setiap microservice
     ```sh
     sudo nano /etc/netplan/10-lxc.yaml
