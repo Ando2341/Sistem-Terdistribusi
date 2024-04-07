@@ -1,6 +1,6 @@
 ## Tugas 2 Load Balancing dengan Round Robin
 ![alt text](https://github.com/Ando2341/Sistem-Terdistribusi/blob/main/Tugas%202/assets/skema.jpg?raw=true)
-Untuk skema webserver sister.local bisa diakses ke [Tugas 1]([http://www.contohlink.com](https://github.com/Ando2341/Sistem-Terdistribusi/tree/8578f11da250dd32963dcd61a2f8cb7d8d45892a/Tugas%201))
+Untuk skema webserver sister.local bisa diakses ke [Tugas 1](https://github.com/Ando2341/Sistem-Terdistribusi/tree/8578f11da250dd32963dcd61a2f8cb7d8d45892a/Tugas%201)
 
 # Membuat app.sister.local
 - Masuk ke direktori 
